@@ -1,0 +1,12 @@
+/* Comentário no CSS */
+
+body {
+    width: 80vw; /* 90vw: 90% da viewport width */
+    margin: auto; /* margem com ajuste automático */
+    font-size: 20px; /* o padrão é 16px */
+}
+
+section {
+    background-color: lightgrey;
+    padding: 40px; /* preenchimento [interno] */
+}
