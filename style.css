@@ -1,12 +1,40 @@
-/* Comentário no CSS */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap');
+
 
 body {
     width: 80vw; /* 90vw: 90% da viewport width */
     margin: auto; /* margem com ajuste automático */
     font-size: 20px; /* o padrão é 16px */
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
+}
+
+.nome-curriculo {
+    font-family: "Anta", sans-serif;
+    font-size: 3rem;
+    margin: 2rem 1rem 3rem 4rem; /* shorthand para margin-top margin-right margin-bottom margin-left*/
 }
 
 section {
-    background-color: lightgrey;
     padding: 40px; /* preenchimento [interno] */
+}
+
+section#apresentacao {
+    background-color: lightcoral;
+}
+
+section#formacaoAcademica {
+    background-color: lightgreen;
+}
+
+section#experienciaProfissional {
+    background-color: bisque;
+}
+
+.titulo-secao {
+    text-transform: uppercase; /* transforma o texto em maiúsculas */
+    font-family: "Anta", sans-serif;
+    color: dimgray;
 }
