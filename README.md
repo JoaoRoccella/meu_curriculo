@@ -1,5 +1,5 @@
 # meu_curriculo
-Este é o meu currículo em HTML. O Mardown é muito limitado, então nesta página está o meu verdadeiro potencial.
+Este é o meu currículo em HTML. O Mardown é muito limitado, então nesta página está o meu verdadeiro potencial. 
 
 Exercício 1:
 
