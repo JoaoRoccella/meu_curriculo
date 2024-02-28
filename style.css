@@ -2,9 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap');
 
+:root {
+    font-size: 16px; /* tamanho base do rem -> 1rem = 16px */
+}
 
 body {
-    width: 80vw; /* 90vw: 90% da viewport width */
+    width: 80vw; /* 80vw: 80% da viewport width */
     margin: auto; /* margem com ajuste automático */
     font-size: 20px; /* o padrão é 16px */
     font-family: "Oswald", sans-serif;
@@ -38,4 +41,11 @@ section#experienciaProfissional {
     text-transform: uppercase; /* transforma o texto em maiúsculas */
     font-family: "Anta", sans-serif;
     color: dimgray;
+    font-size: 2rem;
+    margin: 1rem; /* valores: cima direita baixo esquerda */
+    padding: 1rem; /* valores: cima direita baixo esquerda */
+}
+
+p {
+    line-height: 1.5; /* altura da linha: 1.5x o tamanho padrão */
 }
