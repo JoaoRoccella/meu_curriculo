@@ -1,7 +1,7 @@
 # meu_curriculo
 Este é o meu currículo em HTML. O Mardown é muito limitado, então nesta página está o meu verdadeiro potencial. 
 
-Exercício 1:
+Exercício 1: 
 
 Crie uma página HTML contendo as seguintes seções usando uma estrutura semântica:
 
