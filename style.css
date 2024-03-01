@@ -1,16 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/* @TODO Otimizar a importação das fontes com um único link */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap');
 
-:root {
+/* pt -> Pontos de tipografia 
+padrão ABNT -> Arial 12pt 
+mm -> milímetro
+cm -> centímetro */
+
+/* Alguns valores de propriedades não tem unidade de medida.
+   Exemplo: line-height, aspect-ratio, font-weight */
+
+* { /* "*" -> todos os elementos aplicáveis */
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    /* box-sizing: como o CSS calcula o tamanho dos elementos */
+}
+
+:root { /* root -> elemento raiz (html), mais alta hierarquia */
     font-size: 16px; /* tamanho base do rem -> 1rem = 16px */
+    scroll-behavior: smooth; /* comportamento da rolagem: suave */
 }
 
 body {
     width: 80vw; /* 80vw: 80% da viewport width */
     margin: auto; /* margem com ajuste automático */
     font-size: 20px; /* o padrão é 16px */
-    font-family: "Oswald", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-weight: 200;
 }
 
@@ -20,21 +38,46 @@ body {
     margin: 2rem 1rem 3rem 4rem; /* shorthand para margin-top margin-right margin-bottom margin-left*/
 }
 
-
 section {
     padding: 40px; /* preenchimento [interno] */
 }
 
-section#apresentacao {
+#apresentacao {
     background-color: lightcoral;
 }
 
-section#formacaoAcademica {
+#formacaoAcademica {
     background-color: lightgreen;
 }
 
-section#experienciaProfissional {
+#experienciaProfissional {
     background-color: bisque;
+}
+
+#tecnologias {
+    display: flex; /* exibe como caixa flexível (Flexbox) */
+    /* Flexbox tem várias propriedades que trabalham junto */
+    justify-content: space-evenly; /* alinha o conteúdo no eixo principal */
+}
+
+/* Combinadores */
+
+article h1 { /* h1 descendente de article */
+    font-size: 2rem;
+    font-weight: bold; /* bold = 700 */
+}
+
+article h2 {/* h2 descendente de article */
+    font-size: 1.5rem;
+    font-weight: 600; /* demi-bold (quase negrito) */
+}
+
+article p {
+    text-align: justify;
+}
+
+article {
+    width: 30%; /* 30% do pai (section id="tecnologias") */
 }
 
 .titulo-secao {
@@ -44,8 +87,18 @@ section#experienciaProfissional {
     font-size: 2rem;
     margin: 1rem; /* valores: cima direita baixo esquerda */
     padding: 1rem; /* valores: cima direita baixo esquerda */
+    text-shadow: 1px 1px 2px dimgray;
 }
 
 p {
     line-height: 1.5; /* altura da linha: 1.5x o tamanho padrão */
+    margin: 1rem 0; /* valores: cima-baixo esquerda-direita */
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    text-shadow: 1px 1px 2px dimgray; /* deslocamentoX deslocamentoY espalhamento cor */
 }

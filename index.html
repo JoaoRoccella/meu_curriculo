@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu currículo</title>
-    <link rel="stylesheet" href="reset.css"> <!-- aplicado primeiro -->
+    <!-- <link rel="stylesheet" href="reset.css"> aplicado primeiro -->
     <link rel="stylesheet" href="style.css"> <!-- aplicado por último -->
 </head>
+
 <body>
     <header>
         <h1 class="nome-curriculo">João Marcos Roccella Alves</h1>
@@ -15,29 +17,34 @@
     <section id="apresentacao">
         <h2 class="titulo-secao">Apresentação</h2>
         <h3>Sobre mim</h3>
-        <p>Eu sou o João Marcos, tenho 38 anos, sou estudante de tecnologia e professor no curso de Desenvolvedor Front-end no SENAI-SP.</p>
+        <p>Eu sou o João Marcos, tenho 38 anos, sou estudante de tecnologia e professor no curso de Desenvolvedor
+            Front-end no SENAI-SP.</p>
         <p>Sou tímido, mas não tenho problemas para falar em público. Gosto de colaborar em equipe.</p>
         <h3>Como entrar em contato comigo</h3>
-        <p>Você pode conversar comigo me enviando um email em <a href="mailto:joaomra.senai@gmail.com">joaomra.senai@gmail.com</a> ou ligando para o número <a href="tel:+5511983724240">(11) 98372-4240</a> ou me envie uma mensagem no <a href="https://wa.me/+5511983724240">WhatsApp</a></p>
+        <p>Você pode conversar comigo me enviando um email em <a
+                href="mailto:joaomra.senai@gmail.com">joaomra.senai@gmail.com</a> ou ligando para o número <a
+                href="tel:+5511983724240">(11) 98372-4240</a> ou me envie uma mensagem no <a
+                href="https://wa.me/+5511983724240">WhatsApp</a></p>
     </section>
 
     <section id="formacaoAcademica">
         <h2 class="titulo-secao">Formação acadêmica</h2>
-        
+
         <div>
             <h3>Técnico em Eletrônica</h3>
             <p>SENAI "Almirante Tamandaré" em São Bernardo do Campo</p>
             <p>dez/2002</p>
             <p>1200h</p>
-            <p>Neste curso, aprendi a analisar, desenvolver e corrigir problemas em circuitos eletrônicos, criar placas de circuito impresso, construir painéis de acionamentos de motores elétricos...</p>
+            <p>Neste curso, aprendi a analisar, desenvolver e corrigir problemas em circuitos eletrônicos, criar placas
+                de circuito impresso, construir painéis de acionamentos de motores elétricos...</p>
         </div>
-        
+
         <div>
             <h3>Tecnologia em Informática para Negócios</h3>
             <p>FATEC São Bernardo do Campo</p>
             <p>jul/2016</p>
         </div>
-    
+
     </section>
 
     <section id="experienciaProfissional">
@@ -85,7 +92,7 @@
         <h2 class="titulo-secao">Idiomas que eu falo</h2>
 
         <table>
-            
+
             <tr> <!-- tr: table row (linha de tabela) -->
                 <th> <!-- th: table heading (título de [campo de] tabela) -->
                     Idioma
@@ -111,5 +118,68 @@
             </tr>
         </table>
     </section>
+
+    <!-- <div style="font-size: 20px;">
+        <p style="font-size: 3em;">O tamanho da fonte deste parágrafo é proporcional ao tamanho da fonte definido no seu elemento PAI, ou seja, a DIV.</p> 
+    </div> -->
+
+    <section id="tecnologias">
+        <article>
+            <header>
+                <h1>Aprendendo HTML</h1>
+                <h2>Criando uma página com HTML semântico</h2>
+                <p>Joao Marcos</p>
+                <p>1º mar 2024</p>
+            </header>
+
+            <p>Nesta página, apesar de não ficar visível para o usuário, a estrutura do HTML segue um padrão semântico
+                em que... <span><a href="#hardSkills">Continue lendo</a></span></p>
+            <!-- #id -> ancoramento -->
+        </article>
+        <article>
+            <header>
+                <h1>Quando cai o VT?</h1>
+                <h2>Gerenciando suas próprias expectativas</h2>
+                <span>Joao Marcos</span>
+                <span>1º mar 2024</span>
+            </header>
+
+            <p>Aprendendo a gerenciar as expectativas e a ansiedade enquanto aguardamos o tão esperado momento quando...
+                <span><a href="#softSkills">Continue lendo</a></span></p>
+        </article>
+        <article>
+            <header>
+                <h1>Sextou, família?</h1>
+                <h2>A dúvida é se tem happy hour com o VT</h2>
+                <p>Joao Marcos</p>
+                <p>1º mar 2024</p>
+            </header>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestias distinctio debitis assumenda velit harum nisi...
+                <span><a href="#softSkills">Continue lendo</a></span></p>
+        </article>
+        <!-- Copiar linhas:
+        1º selecione as linhas a serem copiadas
+        2º segure a tecla Alt + Shift + ⬇ -->
+
+        <style>
+            /* antes */
+            blockquote:before,
+            q:before {
+                content: '<';
+            }
+
+            /* depois */
+            blockquote:after,
+            q:after {
+                content: '>';
+            }
+        </style>
+
+        <!-- <q>Quem não erra, não aprende</q>
+        <q>Quem ensina, aprende em dobro</q> -->
+
+    </section>
 </body>
+
 </html>

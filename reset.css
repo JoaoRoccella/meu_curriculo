@@ -26,23 +26,28 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: block; /* faz com que os elementos se comportem como "blocos cheios, ocupando 100% da largura disponível do elemento pai */
+	/* Alguns elementos tem display: inline (a, img, spam) */
 }
 body {
-	line-height: 1;
+	line-height: 1; /* altura da linha: 1 (espaço padrão) */
 }
 ol, ul {
-	list-style: none;
+	list-style: none; /* estilo da lista (marcadores): nenhum */
 }
 blockquote, q {
-	quotes: none;
+	quotes: none; /* marcas de citação: nenhuma */
 }
+/* : -> pseudo-classe (diz respeito a um estado do elemento)
+blockquote:before -> antes do elemento blockquote 
+blockquote:after -> depois do elemento blockquote 
+existem muitas pseudo-classes */
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	border-collapse: collapse; /* determina se as bordas da tabela serão individualizadas (separate) ou compartilhadas (collapse) */
+	border-spacing: 0; /* espaçamento entre as bordas: 0 */
 }
