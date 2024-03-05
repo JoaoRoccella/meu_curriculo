@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu currículo</title>
-    <!-- <link rel="stylesheet" href="reset.css"> aplicado primeiro -->
+    <link rel="stylesheet" href="reset.css"> <!-- aplicado primeiro -->
     <link rel="stylesheet" href="style.css"> <!-- aplicado por último -->
 </head>
 
@@ -128,35 +128,39 @@
             <header>
                 <h1>Aprendendo HTML</h1>
                 <h2>Criando uma página com HTML semântico</h2>
-                <p>Joao Marcos</p>
-                <p>1º mar 2024</p>
+                <span class="autor">Joao Marcos</span>
+                <span class="data">1º mar 2024</span>
             </header>
 
-            <p>Nesta página, apesar de não ficar visível para o usuário, a estrutura do HTML segue um padrão semântico
-                em que... <span><a href="#hardSkills">Continue lendo</a></span></p>
+            <p>Nesta página, apesar de não ficar visível para o usuário, a estrutura do HTML segue um padrão semântico em que...</p>
+            
+            <span class="continue-lendo"><a href="#hardSkills">Continue lendo</a></span>
             <!-- #id -> ancoramento -->
         </article>
         <article>
             <header>
                 <h1>Quando cai o VT?</h1>
                 <h2>Gerenciando suas próprias expectativas</h2>
-                <span>Joao Marcos</span>
-                <span>1º mar 2024</span>
+                <span class="autor">Joao Marcos</span>
+                <span class="data">2 mar 2024</span>
             </header>
 
-            <p>Aprendendo a gerenciar as expectativas e a ansiedade enquanto aguardamos o tão esperado momento quando...
-                <span><a href="#softSkills">Continue lendo</a></span></p>
+            <p>Aprendendo a gerenciar as expectativas e a ansiedade enquanto aguardamos o tão esperado momento quando...</p>
+
+            <span class="continue-lendo"><a href="#softSkills">Continue lendo</a></span>
         </article>
         <article>
             <header>
                 <h1>Sextou, família?</h1>
                 <h2>A dúvida é se tem happy hour com o VT</h2>
-                <p>Joao Marcos</p>
-                <p>1º mar 2024</p>
+                <span class="autor">Joao Marcos</span>
+                <span class="data">5 mar 2024</span>
             </header>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestias distinctio debitis assumenda velit harum nisi...
-                <span><a href="#softSkills">Continue lendo</a></span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestias distinctio debitis assumenda velit harum nisi...</p>
+
+            <span class="continue-lendo"><a href="#softSkills">Continue lendo</a></span>
+
         </article>
         <!-- Copiar linhas:
         1º selecione as linhas a serem copiadas

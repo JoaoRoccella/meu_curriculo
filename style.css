@@ -43,21 +43,38 @@ section {
 }
 
 #apresentacao {
-    background-color: lightcoral;
+    background-color: #ecb3b3;
 }
 
 #formacaoAcademica {
-    background-color: lightgreen;
+    background-color: #cdf0cd;
 }
 
 #experienciaProfissional {
-    background-color: bisque;
+    background-color: #fff2e3;
 }
+
+#hardSkills {
+    background-color: #c4e5e5;
+}
+
+#softSkills {
+    background-color: #e9eccc;
+}
+
+#idiomas {
+    background-color: #ecb3e4;
+}
+/* @TODO 
+    1. estilizar as demais seções - OK
+    2. estilizar elementos article
+    3. tirar as sombras de texto
+ */
 
 #tecnologias {
     display: flex; /* exibe como caixa flexível (Flexbox) */
     /* Flexbox tem várias propriedades que trabalham junto */
-    justify-content: space-evenly; /* alinha o conteúdo no eixo principal */
+    justify-content: space-between; /* alinha o conteúdo no eixo principal */
 }
 
 /* Combinadores */
@@ -65,29 +82,57 @@ section {
 article h1 { /* h1 descendente de article */
     font-size: 2rem;
     font-weight: bold; /* bold = 700 */
+    margin: 0 0 1rem 0;
 }
 
 article h2 {/* h2 descendente de article */
     font-size: 1.5rem;
     font-weight: 600; /* demi-bold (quase negrito) */
+    margin: 0 0 1rem 0;
+}
+
+.autor {
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 80%;
+}
+
+.data {
+    font-style: oblique;
+    font-size: 80%;
+}
+
+.continue-lendo {
+    background-color: #483d8b;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+.continue-lendo a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 article p {
     text-align: justify;
+    margin-bottom: 1rem;
 }
 
 article {
     width: 30%; /* 30% do pai (section id="tecnologias") */
+    background-color: #cecece;
+    padding: 2rem;
 }
 
 .titulo-secao {
     text-transform: uppercase; /* transforma o texto em maiúsculas */
     font-family: "Anta", sans-serif;
-    color: dimgray;
+    color: rgb(53, 53, 53);
     font-size: 2rem;
-    margin: 1rem; /* valores: cima direita baixo esquerda */
-    padding: 1rem; /* valores: cima direita baixo esquerda */
-    text-shadow: 1px 1px 2px dimgray;
+    margin: 1rem 0 2rem 0; /* valores: cima direita baixo esquerda */
+    padding: 0; /* valores: cima direita baixo esquerda */
+    /* text-shadow: 1px 1px 2px dimgray; */
 }
 
 p {
@@ -100,5 +145,5 @@ h3 {
     font-weight: 300;
     text-transform: uppercase;
     margin: 1rem 0;
-    text-shadow: 1px 1px 2px dimgray; /* deslocamentoX deslocamentoY espalhamento cor */
+    /* text-shadow: 1px 1px 2px dimgray; */
 }
