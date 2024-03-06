@@ -11,7 +11,8 @@ cm -> centímetro */
 /* Alguns valores de propriedades não tem unidade de medida.
    Exemplo: line-height, aspect-ratio, font-weight */
 
-* { /* "*" -> todos os elementos aplicáveis */
+* {
+    /* "*" -> todos os elementos aplicáveis */
     margin: 0;
     padding: 0;
     border: none;
@@ -19,15 +20,22 @@ cm -> centímetro */
     /* box-sizing: como o CSS calcula o tamanho dos elementos */
 }
 
-:root { /* root -> elemento raiz (html), mais alta hierarquia */
+:root {
+    /* root -> elemento raiz (html), mais alta hierarquia */
     font-size: 16px; /* tamanho base do rem -> 1rem = 16px */
-    scroll-behavior: smooth; /* comportamento da rolagem: suave */
+    scroll-behavior: smooth;  /* comportamento da rolagem: suave */
+    --cor-primaria-texto: #353535;
+    --cor-fundo-tags: #bebebe;
+    --padding-padrao-secao: 40px;
 }
 
 body {
-    width: 80vw; /* 80vw: 80% da viewport width */
-    margin: auto; /* margem com ajuste automático */
-    font-size: 20px; /* o padrão é 16px */
+    width: 80vw;
+    /* 80vw: 80% da viewport width */
+    margin: auto;
+    /* margem com ajuste automático */
+    font-size: 20px;
+    /* o padrão é 16px */
     font-family: "DM Sans", sans-serif;
     font-weight: 200;
 }
@@ -35,11 +43,14 @@ body {
 .nome-curriculo {
     font-family: "Anta", sans-serif;
     font-size: 3rem;
-    margin: 2rem 1rem 3rem 4rem; /* shorthand para margin-top margin-right margin-bottom margin-left*/
+    margin: 2rem 1rem 3rem 4rem;
+    color: var(--cor-primaria-texto);
+    /* shorthand para margin-top margin-right margin-bottom margin-left*/
 }
 
 section {
-    padding: 40px; /* preenchimento [interno] */
+    padding: 40px 0;
+    /* preenchimento [interno] */
 }
 
 #apresentacao {
@@ -65,30 +76,48 @@ section {
 #idiomas {
     background-color: #ecb3e4;
 }
+
+#apresentacao,
+#formacaoAcademica,
+#experienciaProfissional,
+#hardSkills,
+#softSkills,
+#idiomas {
+    padding: var(--padding-padrao-secao);
+}
+
 /* @TODO 
     1. estilizar as demais seções - OK
-    2. estilizar elementos article
-    3. tirar as sombras de texto
+    2. estilizar elementos article - OK
+    3. tirar as sombras de texto - OK
  */
 
 #tecnologias {
-    display: flex; /* exibe como caixa flexível (Flexbox) */
+    display: flex;
+    /* exibe como caixa flexível (Flexbox) */
     /* Flexbox tem várias propriedades que trabalham junto */
-    justify-content: space-between; /* alinha o conteúdo no eixo principal */
+    justify-content: space-between;
+    /* alinha o conteúdo no eixo principal */
 }
 
 /* Combinadores */
 
-article h1 { /* h1 descendente de article */
+article h1 {
+    /* h1 descendente de article */
     font-size: 2rem;
-    font-weight: bold; /* bold = 700 */
+    font-weight: bold;
+    /* bold = 700 */
     margin: 0 0 1rem 0;
+    color: var(--cor-primaria-texto);
 }
 
-article h2 {/* h2 descendente de article */
+article h2 {
+    /* h2 descendente de article */
     font-size: 1.5rem;
-    font-weight: 600; /* demi-bold (quase negrito) */
+    font-weight: 600;
+    /* demi-bold (quase negrito) */
     margin: 0 0 1rem 0;
+    color: var(--cor-primaria-texto);
 }
 
 .autor {
@@ -107,9 +136,6 @@ article h2 {/* h2 descendente de article */
     padding: .5rem 1rem;
     margin-top: 1rem;
     border-radius: 8px;
-}
-
-.continue-lendo a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -117,27 +143,35 @@ article h2 {/* h2 descendente de article */
 article p {
     text-align: justify;
     margin-bottom: 1rem;
+    height: 150px;
+    overflow: hidden; /* transbordamento: escondido*/
 }
 
 article {
-    width: 30%; /* 30% do pai (section id="tecnologias") */
-    background-color: #cecece;
+    width: 30%;
+    /* 30% do pai (section id="tecnologias") */
+    background-color: var(--cor-fundo-tags);
     padding: 2rem;
 }
 
 .titulo-secao {
-    text-transform: uppercase; /* transforma o texto em maiúsculas */
+    text-transform: uppercase;
+    /* transforma o texto em maiúsculas */
     font-family: "Anta", sans-serif;
-    color: rgb(53, 53, 53);
+    color: var(--cor-primaria-texto);
     font-size: 2rem;
-    margin: 1rem 0 2rem 0; /* valores: cima direita baixo esquerda */
-    padding: 0; /* valores: cima direita baixo esquerda */
+    margin: 1rem 0 2rem 0;
+    /* valores: cima direita baixo esquerda */
+    padding: 0;
+    /* valores: cima direita baixo esquerda */
     /* text-shadow: 1px 1px 2px dimgray; */
 }
 
 p {
-    line-height: 1.5; /* altura da linha: 1.5x o tamanho padrão */
-    margin: 1rem 0; /* valores: cima-baixo esquerda-direita */
+    line-height: 1.5;
+    /* altura da linha: 1.5x o tamanho padrão */
+    margin: 1rem 0;
+    /* valores: cima-baixo esquerda-direita */
 }
 
 h3 {
@@ -145,5 +179,15 @@ h3 {
     font-weight: 300;
     text-transform: uppercase;
     margin: 1rem 0;
+    color: var(--cor-primaria-texto);
     /* text-shadow: 1px 1px 2px dimgray; */
+}
+
+.lista-tags li {
+    display: inline-block;
+    background-color: var(--cor-fundo-tags);
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px;
+    color: var(--cor-primaria-texto);
 }
