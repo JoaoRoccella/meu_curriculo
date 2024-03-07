@@ -24,20 +24,34 @@ cm -> centímetro */
     /* root -> elemento raiz (html), mais alta hierarquia */
     font-size: 16px; /* tamanho base do rem -> 1rem = 16px */
     scroll-behavior: smooth;  /* comportamento da rolagem: suave */
+    --padding-padrao-secao: 40px;
+}
+
+[data-tema="light"] {
+    --plano-fundo: #ffffff;
     --cor-primaria-texto: #353535;
     --cor-fundo-tags: #bebebe;
-    --padding-padrao-secao: 40px;
+    --cor-fundo-apresentacao: #ecb3b3;
+    --cor-fundo-formacaoAcademica: #cdf0cd;
+    --cor-fundo-experienciaProfissional: #fff2e3;
+}
+
+[data-tema="dark"] {
+    --plano-fundo: #353535;
+    --cor-primaria-texto: #ffffff;
+    --cor-fundo-tags: #353535;
+    --cor-fundo-apresentacao: #9f3478;
+    --cor-fundo-formacaoAcademica: #036d03;
+    --cor-fundo-experienciaProfissional: #e67f09;
 }
 
 body {
     width: 80vw;
-    /* 80vw: 80% da viewport width */
     margin: auto;
-    /* margem com ajuste automático */
     font-size: 20px;
-    /* o padrão é 16px */
     font-family: "DM Sans", sans-serif;
     font-weight: 200;
+    background-color: var(--plano-fundo);
 }
 
 .nome-curriculo {
@@ -45,24 +59,26 @@ body {
     font-size: 3rem;
     margin: 2rem 1rem 3rem 4rem;
     color: var(--cor-primaria-texto);
-    /* shorthand para margin-top margin-right margin-bottom margin-left*/
 }
 
 section {
     padding: 40px 0;
-    /* preenchimento [interno] */
+}
+
+section p {
+    color: var(--cor-primaria-texto);
 }
 
 #apresentacao {
-    background-color: #ecb3b3;
+    background-color: var(--cor-fundo-apresentacao);
 }
 
 #formacaoAcademica {
-    background-color: #cdf0cd;
+    background-color: var(--cor-fundo-formacaoAcademica);
 }
 
 #experienciaProfissional {
-    background-color: #fff2e3;
+    background-color: var(--cor-fundo-experienciaProfissional);
 }
 
 #hardSkills {
@@ -83,6 +99,7 @@ section {
 #hardSkills,
 #softSkills,
 #idiomas {
+    margin: 5rem 0;
     padding: var(--padding-padrao-secao);
 }
 
@@ -150,7 +167,7 @@ article p {
 article {
     width: 30%;
     /* 30% do pai (section id="tecnologias") */
-    background-color: var(--cor-fundo-tags);
+    background-color: #cecece;
     padding: 2rem;
 }
 
